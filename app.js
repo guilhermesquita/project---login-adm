@@ -41,8 +41,17 @@ btn.addEventListener("click", function(e){
 
     if (name == apenasAdm[0].Nome||apenasAdm[1].Nome||apenasAdm[2].Nome){
         window.location.href = "admpage.html"
-    }
-       
+    }     
 })
 
+const btn2 = document.getElementById('sendadm');
 
+btn.addEventListener("click", function(e){
+    e.preventDefault();
+
+    const pass = document.getElementById('senha').value
+
+    if (pass == apenasAdm[0].Senha||apenasAdm[1].Senha||apenasAdm[2].Senha){
+        window.alert("cccsd")
+    }
+})
